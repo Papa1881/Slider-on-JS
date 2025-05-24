@@ -1,0 +1,295 @@
+body {
+    margin: 0;
+    font-family: 'Yeseva One';
+    background-color: rgba(19, 19, 19, 1);
+    color: rgba(227, 184, 115, 1);
+  }
+  
+  .projects {
+    display: flex;
+    justify-content: space-between;
+    padding: 60px 80px;
+    max-width: 1400px;
+    margin: auto;
+    gap: 50px;
+  }
+  
+  .projects__content {
+    width: 40%;
+    margin-top: 176.36px;
+  }
+  
+  .projects__title span {
+    color: #f3c85b;
+    font-weight: bold;
+    font-size: 24px;
+  }
+  
+  .projects__title {
+    display: flex;
+    align-items: center;
+    font-size: 27px;
+    text-transform: uppercase;
+    color: rgba(227, 184, 115, 1);
+    font-weight: 400;
+    line-height: 129%;
+  }
+
+  .projects__title strong {
+    font-weight: bold;
+  }
+  
+  .projects__heading {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-transform: uppercase;
+    color: rgba(227, 184, 115, 1);
+    font-size: 27px;
+    font-weight: bold;
+    line-height: 129%;
+  }
+  
+  .projects__bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  } 
+  
+
+  /* .projects__line {
+    width: 70px;
+    height: 2px;
+    background-color: rgba(227, 184, 115, 1);
+  } */
+
+    .styled-dash {
+        display: inline-block;
+        width: 91px;     
+        height: 1px;     
+        background-color: rgba(227, 184, 115, 1);
+        vertical-align: middle;
+        margin: 0 30px;
+      }
+  
+  
+  
+  .projects__description {
+    font-size: 14px;
+    color: rgba(255, 255, 255, 1);
+    margin-top: 34px; 
+    margin-bottom: 42px;
+    line-height: 191%;
+    font-family: 'Nunito+Sans';
+    font-weight: 400;
+  }
+  
+  .projects__info {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px 40px;
+    max-width: 500px;
+    line-height: 164%;
+  }
+
+  .projects__info span {
+    font-family: 'Nunito+Sans';
+    font-weight: 400;
+    color: rgba(255, 255, 255, 1);
+    font-size: 13px;
+    line-height: 164%;
+    display: inline-block; 
+    margin-top: 9px;
+  }
+  
+  .projects__info div {
+    font-size: 14px;
+    line-height: 1.4;
+    color: rgba(255, 255, 255, 1);
+  }
+  
+  .projects__info strong {
+    text-transform: uppercase;
+    color: rgba(227, 184, 115, 1);
+    font-size: 18px;
+    line-height: 164%;
+  }
+  
+  .projects__navigation {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    margin-top: 79.65px;
+  }
+
+  .projects__line {
+    width: 70px;
+    height: 2px;
+    background-color: rgba(227, 184, 115, 1);
+    /* gap: 300px; */
+  }
+  
+  .arrow {
+    background: none;
+    border: none;
+    outline: none;
+    box-shadow: none;
+    color: rgba(255, 255, 255, 1);
+    font-size: 20px;
+    cursor: pointer;
+    padding: 0;
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 30px;
+    margin-left: 30px;
+  }
+  
+  .arrow:focus {
+    outline: none;
+    border: none;
+    box-shadow: none;
+  }
+  
+  .dots {
+    display: flex;
+    gap: 17.54px;
+  }
+  
+  .dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.3);
+    cursor: pointer;
+  }
+  
+  .dot.active {
+    background-color: rgba(255, 255, 255, 1);
+  }
+  
+  .projects__right {
+    width: 55%;
+  }
+  
+  .projects__tabs {
+    display: flex;
+    justify-content: flex-start;
+    gap: 60.5px;
+    margin-bottom: 20px;
+    margin-top: 107px;
+    flex-wrap: wrap;
+  }
+  
+  .tab {
+    background: none;
+    border: none;
+    font-family: 'Yeseva One';
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.3);
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+  }
+  .tab:hover {
+    opacity: 1;
+  }
+
+  .tab.active {
+    color: rgba(227, 184, 115, 1);
+    position: relative;
+  }
+  
+  .tab.active::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background-color: rgba(227, 184, 115, 1);
+    
+  }
+
+  .tab:focus {
+    outline: none;
+  }
+  
+  .projects__slider {
+    width: 100%;
+    position: relative;
+  }
+  
+  .slide {
+    display: none;
+  }
+  
+  .slide.active {
+    display: block;
+    margin-top: 45.36px;
+  }
+  
+  .slide img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border: 3px solid #333;
+  }
+
+  @media (max-width: 768px) {
+    .projects {
+      flex-direction: column;
+      padding: 30px 20px;
+      gap: 40px;
+    }
+  
+    .projects__content,
+    .projects__right {
+      width: 100%;
+    }
+  
+    .projects__title {
+      font-size: 28px;
+      text-align: center;
+    }
+  
+    .projects__description {
+      text-align: center;
+      font-size: 14px;
+    }
+  
+    .projects__info {
+      text-align: center;
+    }
+  
+    .projects__navigation {
+      justify-content: center;
+      margin-top: 20px;
+    }
+  
+    .projects__tabs {
+      justify-content: center;
+      gap: 20px;
+      margin-bottom: 20px;
+      flex-wrap: wrap;
+    }
+  
+    .tab {
+      font-size: 14px;
+    }
+  
+    .arrow {
+      width: 28px;
+      height: 28px;
+      font-size: 16px;
+    }
+  
+    .slide img {
+      width: 100%;
+      max-height: 300px;
+      object-fit: cover;
+    }
+  }
