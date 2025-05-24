@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Yeseva One -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap" rel="stylesheet">
+<!-- Nunito Sans -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Yeseva+One&display=swap" rel="stylesheet">
+  
+<title>Слайдер на JS</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <section class="projects">
+
+    <div class="projects__content">
+        <div class="projects__heading">
+            <span class="projects__top">COMPLETED</span>
+             <div class="projects__bottom">
+              <span class="projects__word">PROJECTS <span class="styled-dash"></span></span> 
+              
+            </div>
+          </div>
+          
+      <p class="projects__description">
+        Only a small part of the work performed by our company is presented <br> on the site. 
+        For 14 years on in the construction <br> market we have made happy more than 1000 families
+      </p>
+      <div class="projects__info">
+        <div><strong>CITY:</strong><br /> <span>Rostov-on-Don<br />LCD admiral</span></div>
+        <div><strong>APARTMENT AREA:</strong><br /> <span>81 m²</span> </div>
+        <div><strong>REPAIR TIME:</strong><br /> <span>3.5 months</span></div>
+        <div><strong>REPAIR COST:</strong><br /> <span>Upon request</span></div>
+      </div>
+
+      <div class="projects__navigation">
+        <button class="arrow left"> <img src="./img/Group.png" alt="arrow"> </button>
+        <div class="dots">
+          <span class="dot active"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+        </div>
+        <button class="arrow right"> <img src="./img/Group (1).png" alt="arrow"> </button>
+      </div>
+    </div>
+
+    <div class="projects__right">
+      <div class="projects__tabs">
+        <button class="tab active" data-index="0">Rostov-on-Don, Admiral</button>
+        <button class="tab" data-index="1">Sochi Thieves</button>
+        <button class="tab" data-index="2">Rostov-on-Don Patriotic</button>
+      </div>
+
+      <div class="projects__slider">
+        <div class="slide active">
+          <img src="./img/img-1.png" alt="Photo 1">
+        </div>
+        <div class="slide">
+          <img src="./img/img-2.png" alt="Photo 2">
+        </div>
+        <div class="slide">
+          <img src="./img/img-3.png" alt="Photo 3">
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
